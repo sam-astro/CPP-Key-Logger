@@ -1,0 +1,3 @@
+﻿  Net.cpp
+C:\Users\samda\Documents\Visual Studio 2019\Projects\KeyLogger\KeyLogger\Net.cpp(187): warning C4717: 'main': recursive on all control paths, function will cause runtime stack overflow
+  KeyLogger.vcxproj -> C:\Users\samda\Documents\Visual Studio 2019\Projects\KeyLogger\Debug\KeyLogger.exe
