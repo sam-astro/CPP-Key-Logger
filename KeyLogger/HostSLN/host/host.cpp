@@ -10,10 +10,9 @@
 
 // Need to link with Ws2_32.lib
 #pragma comment (lib, "Ws2_32.lib")
-// #pragma comment (lib, "Mswsock.lib")
 
 #define DEFAULT_BUFLEN 512
-#define DEFAULT_PORT "80"
+#define DEFAULT_PORT "80"       //running port, changes which port is left open and checing to receive
 
 int __cdecl main(void)
 {
