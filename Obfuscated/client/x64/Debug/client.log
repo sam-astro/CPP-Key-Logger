@@ -1,5 +1,5 @@
 ﻿  net.cpp
-E:\CPP-Key-Logger\Obfuscated\client\net.cpp(39,60): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+E:\CPP-Key-Logger\Obfuscated\client\net.cpp(35,19): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
   source.cpp
   Generating Code...
   client.vcxproj -> E:\CPP-Key-Logger\Obfuscated\client\x64\Debug\client.exe
