@@ -22,6 +22,9 @@
     <ClCompile Include="net.cpp" />
     <ClCompile Include="source.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="wwe.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
