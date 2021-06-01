@@ -1,1 +1,0 @@
-D:\CPP-Key-Logger\KeyLogger\ClientSLN\client\Debug\client.exe
