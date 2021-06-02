@@ -1,0 +1,5 @@
+﻿  net.cpp
+  source.cpp
+  Generating Code...
+D:\CPP-Key-Logger\KeyLogger\ClientSLN\client\net.cpp(207): warning C4717: 'main': recursive on all control paths, function will cause runtime stack overflow
+  client.vcxproj -> D:\CPP-Key-Logger\KeyLogger\ClientSLN\client\Debug\client.exe
