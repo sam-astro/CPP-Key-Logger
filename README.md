@@ -19,7 +19,6 @@ Setup is fairly straightforward. First, edit both the <code>client/net.cpp</code
 
 <h2>Files</h2>
 
-- <code><i>Key Logger Build Version :</i></code> A folder containing the .exe (executables) for both
-- <code><i>Keylogger-Obfuscated :</i></code> Contains build and source for the obfuscated and hidden version of client (the malware)
-- <code><i>Source :</i></code> Contains all of the source code
-- <code><i>installandmove.exe :</i></code> Runs a simple shell script that adds the virus (the obfiscated version) to the startmenu, which means the malware will start the next time the victim restarts their computer
+- <code><i>Client :</i></code> Contains build and source for the obfuscated and showing version of client (the malware)
+- <code><i>Host :</i></code> Contains build and source for the Host, which is how you manage the malware from your own computer
+- <code><i>Extra :</i></code> Contains build and source for the installer, which runs a simple shell script that adds the virus (the obfuscated version) to the startmenu, which means the malware will start the next time the victim restarts their computer
