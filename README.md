@@ -2,7 +2,7 @@
 Local network program that logs keystrokes.
 It stores all key presses and clicks in a text document, and when the host becomes active it will send that data to them.
 
-> <b>IMPORTANT: If you try to run this, it will most likely be detected by your antivirus. Make sure to create an exception or turn of your antivirus if you decide to run it, or it may be deleted.</b>
+> <b>IMPORTANT: If you try to run this, it could possibly be detected by your antivirus. Make sure to use the obfuscated version for actual victims, or create an exception or turn of their antivirus if you decide to run it, or it may be deleted.</b>
 
 <h1>In Development</h1>
 This project is still in development, and has many flaws which keep it from being as good as it could be. I am currently working on a version which allows WAN connectivity, which shouldn't be too difficult once I do some research. I also want to allow for a completely invisible client <i>(the actual "logger")</i>. Although this can be enabled if you like by uncommenting a line of code in net.cpp then recompiling, it doen't work all of the time and I haven't even tested it for a while. 
